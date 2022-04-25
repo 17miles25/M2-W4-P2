@@ -74,6 +74,50 @@
             <title>
                 Exercises 
             </title>
+            <style>
+                body {
+                    width: 100%;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+                a{
+                    color: red;
+                }
+                .border {
+                    
+                }
+                .margin{
+                    margin: 2px;
+                }
+                .font-size-text-weight {
+                    font-size: large;
+                    font-weight: 700;
+                }
+                td{
+                    border-collapse: collapse;
+                    border: 1px solid green
+                }
+                
+                tr{
+                    border-collapse: collapse;
+                    border: red solid 1px;
+
+                }
+                tr td:first-child {
+                    border-left: 1px dotted red;
+                }
+
+                tr td:last-child {
+                    border-right: 1px dotted red;
+                }
+                td {
+                    border-bottom: 1px dotted red;
+                    border-top: 1px dotted red;
+                }
+
+            </style>
         </head>
         <body>
             
@@ -81,32 +125,34 @@
             <ul>
                 <li>This is the first time I will be using Github all the time</li>
                 <li>I love coding even when its hard</li>
-                <li>Why is life sso hard sometimes</li>
+                <li>Why is life so hard sometimes</li>
             </ul>
-            <table>
+            <table class="table-corner">
                 <tr>
-                    <td> Name</td>
-                    <td><a href="strive.school"><img src="#" alt="no image"></a></td>
-                    <td> Name</td>
+                    <td class="border"> Name</td>
+                    <td ><a href="strive.school"><img src="#" alt="no image"></a></td>
+                    <td> Nameda</td>
                     <td> Name</td>
                     <td> Name</td>
                 </tr>
                 <tr>
-                    <td> Name</td>
+                    <td class="border"> Name</td>
                     <td><a href="strive.school"><img src="#" alt="no image"></a></td>
                     <td> Name</td>
-                    <td colspan="2">&nbsp;</td> Name</td>
-                    <td> Name</td>
+                    <td colspan="2 "> Name</td>
+                    
+    
                 </tr>
                 <tr>
-                    <td> Name</td>
+                    <td class="border"> Name</td>
                     <td><a href="strive.school"><img src="#" alt="no image"></a></td>
                     <td> Name</td>
                     <td> Name</td>
                     <td> Name</td>
+                
                 </tr>
                 <tr>
-                    <td> Name</td>
+                    <td class="border"> Name</td>
                     <td><a href="strive.school"><img src="#" alt="no image"></a></td>
                     <td> Name</td>
                     <td> Name</td>
@@ -115,13 +161,21 @@
             </table>
             <hr>
             <div>
-                <p>This is the best day ever because:
+                <p class="margin">This is the best day ever because:
                     <ul>
                         <li>I love the sun</li>
                         <li>I love roses</li>
                     </ul> 
                 </p>
             </div>
+            <script>
+                let x = "John"
+                let y = "Doe"
+                const addNames =x + "<>" + y;
+                console.log(addNames);
+                
+                const allOfTd = document.getElementsByTagName("td")
+            </script>
             <footer>  
                 @Copyright Admire Zimbeva 2022- All Right Reserved.   
             </footer>  
